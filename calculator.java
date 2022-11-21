@@ -19,6 +19,7 @@ public class calculator {
                  n2 = sc.nextInt();
                  int a = n1 = n2;
                  System.out.println("after addition:" + a);
+                 break;
 
              case 2:
                  System.out.println("enter first number");
@@ -27,6 +28,7 @@ public class calculator {
                  n2 = sc.nextInt();
                  int b = n1 - n2;
                  System.out.println("after substraction:" + b);
+                 break;
 
 
              case 3:
@@ -36,6 +38,7 @@ public class calculator {
                  n2 = sc.nextInt();
                  int c = n1 * n2;
                  System.out.println("after Multiplication:" + c);
+                 break;
 
              case 4:
                  System.out.println("enter first number");
@@ -44,9 +47,11 @@ public class calculator {
                  n2 = sc.nextInt();
                  int d = n1 / n2;
                  System.out.println("after division:" + d);
+                 break;
 
              case 5:
                  flag=false;
+                 break;
 
 
              default: {

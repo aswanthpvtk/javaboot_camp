@@ -5,6 +5,7 @@ public class calculator {
         int n1,n2,op;
         boolean flag=true;
      while (flag) {
+         System.out.println("-----------------------------------");
          System.out.println("enter your option");
          Scanner sc = new Scanner(System.in);
          System.out.println("1.Addition\n2.Substraction\n4.Multiplication\n4.Division\n5.Exit");
@@ -45,8 +46,15 @@ public class calculator {
                  n1 = sc.nextInt();
                  System.out.println("enter Secomd number");
                  n2 = sc.nextInt();
-                 int d = n1 / n2;
-                 System.out.println("after division:" + d);
+                 try {
+                     int d = n1 / n2;
+                     System.out.println("after division:" + d);
+                 }
+                 catch (ArithmeticException e)
+                 {
+                     System.out.println("Divided by zero operation cannot possible");
+                 }
+
                  break;
 
              case 5:
@@ -56,6 +64,7 @@ public class calculator {
 
              default: {
                  System.out.println("no option selected");
+                 break;
              }
 
          }

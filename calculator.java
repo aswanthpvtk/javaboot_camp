@@ -11,13 +11,13 @@ public class calculator {
 
         switch(op)
         {
-            case 1:
+            case 2:
                 System.out.println("enter first number");
                 n1=sc.nextInt();
                 System.out.println("enter Secomd number");
                 n2=sc.nextInt();
-                int a=n1+n2;
-                System.out.println("after addition"+a);
+                int a=n1-n2;
+                System.out.println("after Substraction :"+a);
         }
 
 

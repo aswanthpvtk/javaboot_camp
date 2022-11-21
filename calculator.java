@@ -37,6 +37,14 @@ public class calculator {
                 n2=sc.nextInt();
                 int c=n1*n2;
                 System.out.println("after Multiplication:"+c);
+
+            case 4:
+                System.out.println("enter first number");
+                n1=sc.nextInt();
+                System.out.println("enter Secomd number");
+                n2=sc.nextInt();
+                int d=n1/n2;
+                System.out.println("after division:"+d);
         }
 
 
